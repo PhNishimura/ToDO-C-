@@ -1,0 +1,16 @@
+### Listar todas
+GET http://localhost:5202/tarefas
+
+### Criar nova tarefa
+POST http://localhost:5202/tarefas
+Content-Type: application/json
+
+{
+  "titulo": "Estudar Entity Framework"
+}
+
+### Concluir a tarefa 2
+PUT http://localhost:5202/tarefas/2/concluir
+
+### Deletar a tarefa 1
+DELETE http://localhost:5202/tarefas/1
